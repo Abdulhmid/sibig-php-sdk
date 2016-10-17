@@ -29,13 +29,15 @@ $parking->getLocations($format);
 
 ```php    
 //send single transaction
+// format : JSON ("json") / XML ("xml")
 $parking->singleTrans($location, $vehicle, $payment,$enter, $exit,$plate_number, $amount, $format);
 ```
    - [api documentation](http://doc-sandbox.sibigparking.com/#transaksi-tunggal) for fields parameter
 
 ```php
 //send many transaction
-// transactions : Array JSON
+// transactions : Array  JSON
+// format : JSON ("json") / XML ("xml")
 $parking->multiTrans($transactions, $format);
 ```
  - [api documentation](http://doc-sandbox.sibigparking.com/#transaksi-jumlah-besar) for transactions parameter
