@@ -13,7 +13,7 @@ class Base
     }
 
     public function token($config,$format){
-        $filename = "src/token.txt";
+        $filename = "./src/token.txt";
         $handle = fopen($filename, "r");
         if ((int)filesize($filename) < 1) {
             $contents = $this->auth($config,$format);
@@ -49,7 +49,7 @@ class Base
     }
 
     protected function saveToken($token){
-        $file = fopen("src/token.txt","w");
+        $file = fopen("./src/token.txt","w");
         fwrite($file,$token);
         fclose($file);
     }
