@@ -1,6 +1,7 @@
 SI BIG SDK PARKING
 ==================
 
+## Installing
 ```bash
 composer require sdksibig/sibigparking:v0.1
 ```
@@ -41,9 +42,6 @@ $parking->multiTrans($transactions, $format);
 ## Help and docs
 
 - [Documentation](http://doc-sandbox.sibigparking.com/)
-
-## Installing
-
 
 ## Updating Repository
 ```bash
