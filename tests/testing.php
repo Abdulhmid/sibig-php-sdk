@@ -4,7 +4,7 @@ require_once __DIR__ . '/../vendor/autoload.php'; // Autoload files using Compos
 
 use SibigParking\Parking;
 
-$siparking = new SibigParking\Parking(array(
+$siparking = new Parking(array(
   'id'  => '13591b6b-65da-4f84-82ce-a5c23c6d0a99',
   'secret' => 'WRniEDnsxEw7lvV8J2GST0O4ZyLvyDQ1',
 ));
