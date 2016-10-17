@@ -3,36 +3,40 @@ SI BIG SDK PARKING
 
 Usage : 
 
-//declaration
+```php    
+//Declaration
 use SibigParking\Parking;
 ```
 
-```php
+```php    
+// Using Constructor
 $siparking = new Parking(array(
   'id'  => 'Machine ID',
   'secret' => 'Machine Secret',
 ));
-
-//retrieve locations
-$locations = $siparking->getLocations('json');
 ```
-   - [api documentation](http://192.168.2.2:81/redmine/projects/sibig/wiki/API#Daftar-Lokasi)
+```php    
+// Lokasi
+$parking->getLocations($format);
+```
+   - [api documentation](http://doc-sandbox.sibigparking.com/#lokasi)
 
 ```php    
 //send single transaction
-$parking->singleTrans($operatorId, $operatorSecret, $fields);
+$parking->singleTrans($location, $vehicle, $payment,$enter, $exit,$plate_number, $amount, $format);
 ```
-   - [api documentation](http://192.168.2.2:81/redmine/projects/sibig/wiki/API#Single-Transaksi) for fields parameter
+   - [api documentation](http://doc-sandbox.sibigparking.com/#transaksi-tunggal) for fields parameter
 
 ```php
 //send many transaction
-$parking->multiTrans($operatorId, $operatorSecret, $transactions);
+// transactions : Array JSON
+$parking->multiTrans($transactions, $format);
 ```
- - [api documentation](http://192.168.2.2:81/redmine/projects/sibig/wiki/API#Multi-Transaksi) for transactions parameter
+ - [api documentation](http://doc-sandbox.sibigparking.com/#transaksi-jumlah-besar) for transactions parameter
 
 ## Help and docs
 
-- [Documentation](http://192.168.2.2:81/redmine/projects/sibig/wiki/API)
+- [Documentation](http://doc-sandbox.sibigparking.com/)
 
 ## Installing
 
