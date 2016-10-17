@@ -39,3 +39,9 @@ $parking->multiTrans($operatorId, $operatorSecret, $transactions);
 ```bash
 composer require sdksibig/sibigparking:v0.1
 ```
+
+## Updating Repository
+```bash
+curl -XPOST -H'content-type:application/json' 'https://packagist.org/api/update-package?username=Abdulhmid&apiToken=J3CPYd5EIS52A7Oay6cP' -d'{"repository":{"url":"https://github.com/Abdulhmid/sibig-php-sdk.git"}}'
+```
+
