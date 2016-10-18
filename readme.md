@@ -9,16 +9,22 @@ composer require sdksibig/sibigparking:v0.1
 Usage : 
 
 ```php    
+//Make sure to include the Composer autoloader at the top of your script.
+require_once __DIR__ . '/../vendor/autoload.php'; 
+```
+
+```php    
 //Declaration
 use SibigParking\Parking;
 ```
 
 ```php    
 // Using Constructor
+// url = http://sandbox.sibigparking.com (Demo Version) atau http://sandbox.sibigparking.com (Live Version)
 $siparking = new Parking(array(
   'id'  => 'Machine ID',
   'secret' => 'Machine Secret',
-  'url' => 'http://sandbox.sibigparking.com/',
+  'url' => 'url',
 ));
 ```
 ```php    
