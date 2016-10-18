@@ -36,7 +36,7 @@ $parking->singleTrans($location, $vehicle, $payment,$enter, $exit,$plate_number,
 
 ```php
 //send many transaction
-// transactions : Array  JSON
+// transactions : Array JSON dari kumpulan data single transaction
 // format : JSON ("json") / XML ("xml")
 $parking->multiTrans($transactions, $format);
 ```
