@@ -1,4 +1,5 @@
-<?php namespace SibigParking;
+<?php 
+namespace SibigParking;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Psr7\Request;
