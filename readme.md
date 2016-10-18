@@ -18,6 +18,7 @@ use SibigParking\Parking;
 $siparking = new Parking(array(
   'id'  => 'Machine ID',
   'secret' => 'Machine Secret',
+  'url' => 'http://sandbox.sibigparking.com/',
 ));
 ```
 ```php    
