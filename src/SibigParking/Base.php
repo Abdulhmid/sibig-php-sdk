@@ -5,11 +5,8 @@ use GuzzleHttp\Psr7\Request;
 
 class Base
 {
-    static $urlAddress  = "http://sandbox.sibigparking.com/";
-
     public function __construct()
     {
-        $this->urlAddress();
     }
 
     public function token($config,$format){
@@ -32,7 +29,7 @@ class Base
         $client = new Client();
         $accept = $format=="xml"?"xml":"json";
 
-        $response = $client->request('POST', self::$urlAddress.'v1/auth', [
+        $response = $client->request('POST', $config['url'].'v1/auth', [
             'headers' => [
                 'Authorization' => 'Basic '.base64_encode($config['id'].":".$config['secret']),
                 'Accept'    => 'application/'.$accept

@@ -7,15 +7,12 @@ use GuzzleHttp\Exception\ClientException;
 
 class Parking extends Base
 {
-    static $url = "http://sandbox.sibigparking.com/";
-	// static $url = "http://localhost:9090/";
-
-	public function __construct(
+    public function __construct(
         $config
     )
     {
         $this->config = $config;
-	}
+    }
 
     public function getLocations($format){
         $token = self::token($this->config,$format);
@@ -40,7 +37,7 @@ class Parking extends Base
         $accept = $format=="xml"?"xml":"json";
 
         try {
-            $location = $client->request('GET', self::$url.'v1/parking/locations', [
+            $location = $client->request('GET', $this->config['url'].'v1/parking/locations', [
                 'headers' => [
                     'Authorization' => 'Bearer '.$token,
                     'Accept'    => 'application/'.$accept
@@ -114,7 +111,7 @@ class Parking extends Base
         $accept = $format=="xml"?"xml":"json";
 
         try {
-            $singleTransaction = $client->request('POST', self::$url.'v1/parking/transaction', [
+            $singleTransaction = $client->request('POST', $this->config['url'].'v1/parking/transaction', [
                 'headers' => [
                     'Authorization' => 'Bearer '.$token,
                     'Accept'        => 'application/'.$accept,
@@ -168,7 +165,7 @@ class Parking extends Base
         $accept = $format=="xml"?"xml":"json";
 
         try {
-            $location = $client->request('POST', self::$url.'v1/parking/transactions', [
+            $location = $client->request('POST', $this->config['url'].'v1/parking/transactions', [
                 'headers' => [
                     'Authorization' => 'Bearer '.$token,
                     'Accept'        => 'application/'.$accept,
