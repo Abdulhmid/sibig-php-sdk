@@ -30,7 +30,7 @@ class Base
         $client = new Client();
         $accept = $format=="xml"?"xml":"json";
 
-        $response = $client->request('POST', $config['url'].'v1/auth', [
+        $response = $client->request('POST', $config['url'].$this->config['version'].'/auth', [
             'headers' => [
                 'Authorization' => 'Basic '.base64_encode($config['id'].":".$config['secret']),
                 'Accept'    => 'application/'.$accept

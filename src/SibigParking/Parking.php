@@ -38,7 +38,7 @@ class Parking extends Base
         $accept = $format=="xml"?"xml":"json";
 
         try {
-            $location = $client->request('GET', $this->config['url'].'v1/parking/locations', [
+            $location = $client->request('GET', $this->config['url'].$this->config['version'].'/parking/locations', [
                 'headers' => [
                     'Authorization' => 'Bearer '.$token,
                     'Accept'    => 'application/'.$accept
@@ -112,7 +112,7 @@ class Parking extends Base
         $accept = $format=="xml"?"xml":"json";
 
         try {
-            $singleTransaction = $client->request('POST', $this->config['url'].'v1/parking/transaction', [
+            $singleTransaction = $client->request('POST', $this->config['url'].$this->config['version'].'/parking/transaction', [
                 'headers' => [
                     'Authorization' => 'Bearer '.$token,
                     'Accept'        => 'application/'.$accept,
@@ -166,7 +166,7 @@ class Parking extends Base
         $accept = $format=="xml"?"xml":"json";
 
         try {
-            $location = $client->request('POST', $this->config['url'].'v1/parking/transactions', [
+            $location = $client->request('POST', $this->config['url'].$this->config['version'].'/parking/transactions', [
                 'headers' => [
                     'Authorization' => 'Bearer '.$token,
                     'Accept'        => 'application/'.$accept,
