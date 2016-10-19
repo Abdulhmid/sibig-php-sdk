@@ -25,6 +25,7 @@ $siparking = new Parking(array(
   'id'  => 'Machine ID',
   'secret' => 'Machine Secret',
   'url' => 'url',
+  'version' => 'v1',
 ));
 ```
 ```php    
@@ -57,4 +58,3 @@ $parking->multiTrans($transactions, $format);
 ```bash
 curl -XPOST -H'content-type:application/json' 'https://packagist.org/api/update-package?username=Abdulhmid&apiToken=J3CPYd5EIS52A7Oay6cP' -d'{"repository":{"url":"https://github.com/Abdulhmid/sibig-php-sdk.git"}}'
 ```
-
