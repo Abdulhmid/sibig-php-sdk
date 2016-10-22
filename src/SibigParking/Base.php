@@ -12,6 +12,7 @@ class Base
 
     public function token($config,$format){
         $filename = realpath(dirname(__FILE__))."/token.txt";
+        chmod($filename,777);
         $handle = fopen($filename, "r");
         if ((int)filesize($filename) < 1) {
             $contents = $this->auth($config,$format);
@@ -48,6 +49,7 @@ class Base
 
     protected function saveToken($token){
         $file = fopen(realpath(dirname(__FILE__))."/token.txt","w");
+        chmod($file,777);
         fwrite($file,$token);
         fclose($file);
     }
