@@ -68,7 +68,7 @@ Quick start
 Menggunakan Api Daftar Lokasi
 ------------
 
-@response
+- Response
 ```{.json}
     {
        "locations": [
@@ -80,30 +80,30 @@ Menggunakan Api Daftar Lokasi
          }
        ],
       "count": 1
-    }e app
+    }
 ```
 
 Menggunakan Api Kirim Transaksi Tunggal
 ------------
 
-@response
+- Response
 ```{.json}
     {
         "message": "Successfully add transaction."
-    }e app
+    }
 ```
 
 Menggunakan Api Kirim Transaksi Dalam Jumlah Banyak
 ------------
 
-@response
+- Response
 ```{.json}
     {
         "message": "Successfully add transactions.",
         "sent": 2,
         "succeed": 1,
         "failed": 1
-    }e app
+    }
 ```
 
 TODO
