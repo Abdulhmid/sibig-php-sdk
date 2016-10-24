@@ -32,14 +32,16 @@ $siparking = new Parking(array(
 ```
 
 ## Menampilkan Daftar Lokasi
-```php   
+```   
 
-Install the dependencies and devDependencies and start the server.
+Alternatively, you can specify Cybozu HTTP as a dependency in your project's existing composer.json file:
 
-```sh
-$ cd dillinger
-$ npm install -d
-$ node app
+```{.json}
+    {
+       "require": {
+          "ochi51/cybozu-http": "0.1.*@dev"
+       }
+    }e app
 ```
 
 ```sh
