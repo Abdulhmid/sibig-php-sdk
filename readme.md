@@ -9,6 +9,8 @@ composer require sdksibig/sibigparking:v0.1
 Usage : 
 
 ```php    
+// Ubah permission file token.txt
+Ubah permission file ke 777 yang terdapat di folder src/SibigParking; 
 //Make sure to include the Composer autoloader at the top of your script.
 require_once __DIR__ . '/../vendor/autoload.php'; 
 ```
