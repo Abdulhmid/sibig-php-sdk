@@ -144,6 +144,15 @@ Menggunakan Api Kirim Transaksi Dalam Jumlah Banyak
     ```
        $parking->multiTrans($trans,"json")
     ```
+- Response2
+```{.json}
+    {
+        "message": "Successfully add transactions.",
+        "sent": 2,
+        "succeed": 1,
+        "failed": 1
+    }
+
 - Response
 ```{.json}
     {
