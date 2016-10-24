@@ -138,8 +138,24 @@ Menggunakan Api Kirim Transaksi Dalam Jumlah Banyak
        Format : JSON => "json" / XML => "xml"
     ```
 - contoh : 
+    ```{.bash}
+        $trans : 
+            ```{.json}
+                {
+                   "locations": [
+                     {
+                       "location_id": "4d565e1a-bcff-4ae4-92d9-2a23cff67e27",
+                       "name": "Mall Bekasi Sumarecon",
+                       "address": "Jalan Boulevard Ahmad Yani Blok M",
+                       "city": "BEKASI" 
+                     }
+                   ],
+                  "count": 1
+                }
+            ```
     ```
-       $parking->multiTrans("json")
+    ```
+       $parking->multiTrans($trans,"json")
     ```
 - Response
 ```{.json}
