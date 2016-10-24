@@ -56,15 +56,15 @@ Quick start
 ------------
 
 ```{.php}
-    $api = new \CybozuHttp\Api\KintoneApi(\CybozuHttp\Client::factory([
-        'domain' => 'cybozu.com'
-        'subdomain' => 'your-subdomain'
-        'login' => 'your-login-name'
-        'password' => 'your-password'
-    ]));
+    $siparking = new Parking(array(
+      'id'  => 'Machine ID',
+      'secret' => 'Machine Secret',
+      'url' => 'url',
+      'version' => 'v1',
+    ));
     
-    // get record that kintone app id is 100 and record id is 1.
-    $record = $api->record()->get(100, 1);
+    // get record location format xml.
+    $location = $parking->getLocations('xml');
 ```
 
 Usage
@@ -72,27 +72,10 @@ Usage
 
 @todo
 
-Testing
-------------
-
-To run the tests, you need to following process.
-
-- Prepare your kintone account.
-    - Free trial is [here](https://www.cybozu.com/jp/service/com/trial/?fcode=F00000081)
-- Create kintone space template. (Enable multiple thread)
-- Create graph.
-- Edit `parameters.yml`.
-
-Run the following command from the project folder.
-
-```{.bash}
-    $ php ./bin/phpunit
-```
-
 TODO
 ------------
 
-- Japanese documentation.
+- English documentation.
 
 License
 ------------
