@@ -131,7 +131,26 @@ Menggunakan Api Kirim Transaksi Dalam Jumlah Banyak
     ```
 - Format Data:
     ```{.bash}
-       Format : JSON => "json" / XML => "xml"
+            [  
+               {  
+                  "location":"4d565e1a-bcff-4ae4-92d9-2a23cff67e27",
+                  "vehicle":1,
+                  "payment":1,
+                  "enter":"2016-08-03 16:15:11",
+                  "exit":"2016-08-03 19:15:12",
+                  "plate_number":"2222",
+                  "amount":"2000"
+               },
+               {  
+                  "location":"4d565e1a-bcff-4ae4-92d9-2a23cff67e27",
+                  "vehicle":1,
+                  "payment":1,
+                  "enter":"2016-08-03 16:15:11",
+                  "exit":"2016-08-03 18:15:12",
+                  "plate_number":"2222",
+                  "amount":"2000"
+               }
+            ]
     ```
 - contoh : 
     ```
