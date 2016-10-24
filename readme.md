@@ -22,7 +22,7 @@ Requirements
 Installation
 ------------
 
-The recommended way to install Cybozu HTTP is with [Composer](https://getcomposer.org/).
+The recommended way to install SDK SI BIG PARKING is with [Composer](https://getcomposer.org/).
 Composer is a dependency management tool for PHP that allows you to declare the dependencies your project needs and installs them into your project.
 
 ```{.bash}
