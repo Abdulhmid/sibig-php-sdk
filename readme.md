@@ -40,7 +40,6 @@ contoh : $parking->getLocations("json")
 ```
 
 ```sh
-contoh :
 format : JSON => "json" / XML => "xml"
 contoh : $parking->getLocations("json")
 ```
