@@ -52,7 +52,7 @@ Setelah installing, anda membutuhkan untuk require Composer's autoloader:
     require_once __DIR__ . '/../vendor/autoload.php'; 
 ```
 
-Atau bisa juga dengna menggunakan
+Atau bisa juga dengan menggunakan
 
 ```{.php}
 use SibigParking\Parking;
