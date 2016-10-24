@@ -100,7 +100,7 @@ Menggunakan Api Kirim Transaksi Tunggal
     ```
        $parking->singleTrans($location, $vehicle, $payment,$enter, $exit,$plate_number, $amount, $format);
     ```
-- $format :
+- Format Data :
 ```{.bash}
     $location => 4d565e1a-bcff-4ae4-92d9-2a23cff67e27
     $vehicle  => 1 "Keterangan = 1,Motor;2:Mobil;3:Lainnya"
@@ -127,15 +127,19 @@ Menggunakan Api Kirim Transaksi Dalam Jumlah Banyak
 ------------
 - Format Penggunaan :
     ```
-       $parking->getLocations($format)
+       $parking->multiTrans($transactions, $format)
     ```
-- $format :
-    ```
+- Format Data:
+    ```{.bash}
+       Transaksi : 
        JSON => "json" / XML => "xml"
+    ```
+    ```{.bash}
+       Format : JSON => "json" / XML => "xml"
     ```
 - contoh : 
     ```
-       $parking->getLocations("json")
+       $parking->multiTrans("json")
     ```
 - Response
 ```{.json}
