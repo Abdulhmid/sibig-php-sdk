@@ -67,10 +67,13 @@ Quick start
 
 Menggunakan Api Daftar Lokasi
 ------------
-- format : JSON => "json" / XML => "xml"
+- format :
+    ```
+       JSON => "json" / XML => "xml"
+    ```
 - contoh : 
-    ```{.bash}
-        $parking->getLocations("json")
+    ```
+       $parking->getLocations("json")
     ```
 - Response
 ```{.json}
