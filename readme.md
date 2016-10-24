@@ -101,6 +101,10 @@ Menggunakan Api Kirim Transaksi Tunggal
        $parking->singleTrans($location, $vehicle, $payment,$enter, $exit,$plate_number, $amount, $format);
     ```
 - $format :
+```{.bash}
+    $ curl -sS https://getcomposer.org/installer | php
+    $ mv composer.phar /usr/local/bin/composer
+```
     ```{.bash}
        $location => 4d565e1a-bcff-4ae4-92d9-2a23cff67e27
        $vehicle  => 1 "Keterangan = 1,Motor;2:Mobil;3:Lainnya"
