@@ -111,9 +111,7 @@ Menggunakan Api Kirim Transaksi Tunggal
     $amount  => 2000
     $format  => 'json'
 ```
-    ```{.bash}
-       $location => 4d565e1a-bcff-4ae4-92d9-2a23cff67e27
-    ```
+
 - contoh : 
     ```
        $parking->getLocations("json")
