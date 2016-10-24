@@ -134,7 +134,6 @@ Menggunakan Api Kirim Transaksi Dalam Jumlah Banyak
     - $format = xml/json
 - Contoh data $trans
 ```{.json}
-    {
         [  
            {  
               "location":"4d565e1a-bcff-4ae4-92d9-2a23cff67e27",
@@ -155,7 +154,6 @@ Menggunakan Api Kirim Transaksi Dalam Jumlah Banyak
               "amount":"2000"
            }
         ]
-    }
 ```
 - contoh : 
     ```
