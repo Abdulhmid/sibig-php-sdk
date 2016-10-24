@@ -114,7 +114,7 @@ Menggunakan Api Kirim Transaksi Tunggal
 
 - contoh : 
     ```
-       $parking->getLocations("json")
+       $parking->singleTrans('4d565e1a-bcff-4ae4-92d9-2a23cff67e27',1,1,'2016-08-01 16:15:11','2016-08-01 16:15:12','AD 4567 A ',2000,'json')
     ```
 - Response
 ```{.json}
