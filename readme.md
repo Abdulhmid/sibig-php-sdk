@@ -63,11 +63,19 @@ Quick start
       'version' => 'v1',
     ));
     
-    // get record location format xml.
-    $location = $parking->getLocations('xml');
 ```
 
-Usage
+Menggunakan Api Daftar Lokasi
+------------
+
+@todo
+
+Menggunakan Api Kirim Transaksi Tunggal
+------------
+
+@todo
+
+Menggunakan Api Kirim Transaksi Dalam Jumlah Banyak
 ------------
 
 @todo
