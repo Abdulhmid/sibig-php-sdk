@@ -35,9 +35,6 @@ $siparking = new Parking(array(
 ```php   
 
 ```sh
-```
-
-```sh
 format : JSON => "json" / XML => "xml"
 contoh : $parking->getLocations("json")
 ```
