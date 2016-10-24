@@ -102,7 +102,7 @@ Menggunakan Api Kirim Transaksi Tunggal
     ```
 - $format :
 ```{.bash}
-    $ curl -sS https://getcomposer.org/installer | php
+    $location => 4d565e1a-bcff-4ae4-92d9-2a23cff67e27
     $ mv composer.phar /usr/local/bin/composer
 ```
     ```{.bash}
