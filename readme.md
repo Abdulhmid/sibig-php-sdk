@@ -133,6 +133,11 @@ Menggunakan Api Kirim Transaksi Dalam Jumlah Banyak
     - $trans = Array Json
     - $format = xml/json
 - contoh : 
+    ```{.json}
+        {
+            "message": "Successfully add transaction."
+        }
+    ```
     ```
        $parking->multiTrans($trans,"json")
     ```
