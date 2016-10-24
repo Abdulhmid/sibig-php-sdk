@@ -40,18 +40,9 @@ contoh : $parking->getLocations("json")
 ```
 
 ```sh
-respone :
-{
-   "locations": [
-     {
-       "location_id": "4d565e1a-bcff-4ae4-92d9-2a23cff67e27",
-       "name": "Mall Bekasi Sumarecon",
-       "address": "Jalan Boulevard Ahmad Yani Blok M",
-       "city": "BEKASI" 
-     }
-   ],
-  "count": 1
-}
+contoh :
+format : JSON => "json" / XML => "xml"
+contoh : $parking->getLocations("json")
 ```
 
 $parking->getLocations($format);
