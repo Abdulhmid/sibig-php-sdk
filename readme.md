@@ -46,11 +46,18 @@ Alternatively, you can specify SDK Sibig Parking as a dependency in your project
     }
 ```
 
-After installing, you need to require Composer's autoloader:
+Setelah installing, anda membutuhkan untuk require Composer's autoloader:
 
 ```{.php}
     require_once __DIR__ . '/../vendor/autoload.php'; 
 ```
+
+Atau bisa juga dengna menggunakan
+
+```{.php}
+use SibigParking\Parking;
+```
+
 
 Quick start
 ------------
