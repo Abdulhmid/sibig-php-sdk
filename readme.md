@@ -33,7 +33,7 @@ $siparking = new Parking(array(
 
 ## Menampilkan Daftar Lokasi
 ```php   
-// format : JSON ("json") / XML ("xml")
+
 ```sh
 format : JSON => "json" / XML => "xml"
 contoh : $parking->getLocations("json")
