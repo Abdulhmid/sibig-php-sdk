@@ -1,24 +1,17 @@
-Cybozu HTTP client for PHP[![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](https://github.com/ochi51/cybozu-http/tree/master/LICENSE)
+SDK SI BIG PARKING
 =======================
 
-[![Circle CI](https://circleci.com/gh/ochi51/cybozu-http/tree/master.svg?style=svg)](https://circleci.com/gh/ochi51/cybozu-http/tree/master)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/ochi51/cybozu-http/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/ochi51/cybozu-http/?branch=master)
-[![Code Coverage](https://scrutinizer-ci.com/g/ochi51/cybozu-http/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/ochi51/cybozu-http/?branch=master)
-[![Build Status](https://scrutinizer-ci.com/g/ochi51/cybozu-http/badges/build.png?b=master)](https://scrutinizer-ci.com/g/ochi51/cybozu-http/build-status/master)
-
-Cybozu HTTP is a PHP HTTP client library for cybozu.com API.
-
-cybozu.com API Documentation
+sibigparking.com API Documentation
 ------------
 
-[Japanese](https://cybozudev.zendesk.com/hc/ja)
-[English](https://developer.kintone.io/hc/en-us)
+[API Doc](https://doc.sibigparking.com/)
 
 Available API
 ------------
 
-- kintone API
-- User API
+- API Daftar Lokasi
+- API Kirim Transaksi Tunggal
+- API Kirim Transaksi Dalam Jumlah Banyak
 
 If you want to use Garoon API, please send Pull Request.
 
@@ -27,8 +20,6 @@ Requirements
 
 - PHP >=5.5
 - Composer
-- To use the PHP stream handler, `allow_url_fopen` must be enabled in your system's php.ini.
-- To use the cURL handler, you must have a recent version of cURL >= 7.19.4 compiled with OpenSSL and zlib.
 
 Installation
 ------------
