@@ -67,7 +67,8 @@ Quick start
 
 Menggunakan Api Daftar Lokasi
 ------------
-
+- format : JSON => "json" / XML => "xml"
+- contoh : $parking->getLocations("json")
 - Response
 ```{.json}
     {
