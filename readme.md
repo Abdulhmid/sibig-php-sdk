@@ -13,8 +13,6 @@ Available API
 - API Kirim Transaksi Tunggal
 - API Kirim Transaksi Dalam Jumlah Banyak
 
-If you want to use Garoon API, please send Pull Request.
-
 Requirements
 ------------
 
@@ -32,18 +30,18 @@ Composer is a dependency management tool for PHP that allows you to declare the 
     $ mv composer.phar /usr/local/bin/composer
 ```
 
-You can add Cybozu HTTP as a dependency using the composer
+You can add SDK Sibig Parking as a dependency using the composer
 
 ```{.bash}
-    $ composer require ochi51/cybozu-http
+    $ composer require sdksibig/sibigparking:v0.1
 ```
 
-Alternatively, you can specify Cybozu HTTP as a dependency in your project's existing composer.json file:
+Alternatively, you can specify SDK Sibig Parking as a dependency in your project's existing composer.json file:
 
 ```{.json}
     {
        "require": {
-          "ochi51/cybozu-http": "0.1.*@dev"
+          "sdksibig/sibigparking": "v0.1"
        }
     }
 ```
@@ -51,7 +49,7 @@ Alternatively, you can specify Cybozu HTTP as a dependency in your project's exi
 After installing, you need to require Composer's autoloader:
 
 ```{.php}
-    require 'vendor/autoload.php';
+    require_once __DIR__ . '/../vendor/autoload.php'; 
 ```
 
 Quick start
