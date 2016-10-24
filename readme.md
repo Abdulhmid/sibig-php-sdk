@@ -34,7 +34,13 @@ $siparking = new Parking(array(
 ## Menampilkan Daftar Lokasi
 ```php   
 
-contoh penggunaan
+Install the dependencies and devDependencies and start the server.
+
+```sh
+$ cd dillinger
+$ npm install -d
+$ node app
+```
 
 ```sh
 format : JSON => "json" / XML => "xml"
