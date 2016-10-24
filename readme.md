@@ -30,6 +30,8 @@ $siparking = new Parking(array(
   'version' => 'v1',
 ));
 ```
+
+## Menampilkan Daftar Lokasi
 ```php    
 // Lokasi
 // format : JSON ("json") / XML ("xml")
@@ -37,6 +39,7 @@ $parking->getLocations($format);
 ```
    - [api documentation](http://doc-sandbox.sibigparking.com/#lokasi)
 
+## Mengirim 1 Transaksi
 ```php    
 //send single transaction
 // format : JSON ("json") / XML ("xml")
@@ -44,6 +47,7 @@ $parking->singleTrans($location, $vehicle, $payment,$enter, $exit,$plate_number,
 ```
    - [api documentation](http://doc-sandbox.sibigparking.com/#transaksi-tunggal) for fields parameter
 
+## Mengirim banyak Transaksi dalam 1 request 
 ```php
 //send many transaction
 // transactions : Array JSON dari kumpulan data single transaction
