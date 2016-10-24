@@ -130,16 +130,8 @@ Menggunakan Api Kirim Transaksi Dalam Jumlah Banyak
        $parking->multiTrans($transactions, $format)
     ```
 - Format Data:
-    ```{.bash}
-        $location => 4d565e1a-bcff-4ae4-92d9-2a23cff67e27
-        $vehicle  => 1 "Keterangan = 1,Motor;2:Mobil;3:Lainnya"
-        $payment  => 1 "Keterangan = 1,Tunai;2:Member;3:E-Money"
-        $enter    => 2016-08-01 16:15:11
-        $exit     => 2016-08-01 16:15:12
-        $plate_number  => AD 4567 A 
-        $amount  => 2000
-        $format  => 'json'
-    ```
+    - $trans = Array Json
+    - $format = xml/json
 - contoh : 
     ```
        $parking->multiTrans($trans,"json")
